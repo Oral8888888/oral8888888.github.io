@@ -1,11 +1,43 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Brain — Privacy Policy</title>
-<style>body{font:17px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;max-width:620px;margin:8vh auto;padding:0 20px;color:#222}h1{font-size:2rem}a{color:#1a56db}</style></head>
-<body><h1>Privacy Policy</h1><p><em>Last updated: 27 September 2026</em></p>
-<p><strong>What Admin Brain is.</strong> A personal planning tool operated by its single owner. It is not a public service and has no users other than the owner.</p>
-<p><strong>What it accesses.</strong> With the owner's explicit Google sign-in consent, it uses the Google Calendar API to create, update and delete calendar events on the owner's own calendar, and to read the owner's calendar timezone setting. It requests no other Google data.</p>
-<p><strong>What it stores.</strong> An access token, held on the owner's private server, used only to perform the actions above. Calendar data is not copied, shared, sold or used for advertising or analytics.</p>
-<p><strong>Third parties.</strong> None. No data is transferred to any third party.</p>
-<p><strong>Revoking access.</strong> The owner can revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; the stored token then stops working.</p>
-<p><strong>Google API Services User Data Policy.</strong> Admin Brain's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-<p><strong>Contact.</strong> <a href="mailto:a0508465481@gmail.com">a0508465481@gmail.com</a></p>
+<style>body{font:17px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;max-width:680px;margin:6vh auto;padding:0 20px;color:#222}h1{font-size:2rem}h2{font-size:1.2rem;margin-top:2rem}a{color:#1a56db}</style></head>
+<body><h1>Admin Brain — Privacy Policy</h1><p><em>Last updated: 27 September 2026</em></p>
+
+<h2>1. Who we are</h2>
+<p>Admin Brain is a personal planning tool operated by a single individual (the "owner"). It is not a commercial product, it is not offered to the public, and it has no users other than the owner. Contact: <a href="mailto:a0508465481@gmail.com">a0508465481@gmail.com</a>.</p>
+
+<h2>2. What the tool does</h2>
+<p>Admin Brain reads the owner's own project activity (for example, the owner's GitHub issues and the owner's Slack workspace) and turns it into a schedule: it creates, updates and deletes time blocks, deadline markers and reminders on the owner's own Google Calendar, so that the owner receives alarms on their devices.</p>
+
+<h2>3. Google user data we access</h2>
+<p>With the owner's explicit consent via Google sign-in (OAuth 2.0), Admin Brain requests two Google Calendar API permissions:</p>
+<ul>
+<li><strong>calendar.events</strong> — to view, create, change and delete events on the owner's calendars. Used to write the owner's schedule and to read back events the tool itself created, so it can update or remove them.</li>
+<li><strong>calendar.settings.readonly</strong> — to read the owner's calendar timezone setting, so that events are placed at the correct local time when the owner travels.</li>
+</ul>
+<p>The tool requests no other Google data. It does not access Gmail, Google Drive, Contacts, Photos or any other Google service.</p>
+
+<h2>4. How we use the data</h2>
+<p>Calendar data is used exclusively to build and maintain the owner's own schedule and reminders. It is never used for advertising, profiling, analytics, training of machine-learning models, or any purpose other than the one described above.</p>
+
+<h2>5. What we store, and where</h2>
+<p>The tool stores a Google OAuth access/refresh token on a private server controlled by the owner, protected by file-system permissions, so that it can perform the actions in section 3 without asking the owner to sign in every time. It may keep a short-lived local cache of the events it created (their identifiers and content) purely to avoid creating duplicates. No copy of the owner's other calendar data is retained.</p>
+
+<h2>6. Sharing with third parties</h2>
+<p>None. Google user data is never sold, rented, shared or transferred to any third party, and is not transmitted to any service other than Google's own Calendar API.</p>
+
+<h2>7. Data retention and deletion</h2>
+<p>Events created by the tool remain on the owner's calendar until the tool or the owner deletes them. The stored token is deleted when the owner removes it from the server or revokes access (section 8), at which point the tool can no longer access any Google data.</p>
+
+<h2>8. Revoking access</h2>
+<p>The owner can revoke Admin Brain's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Revocation takes effect immediately.</p>
+
+<h2>9. Security</h2>
+<p>Credentials are stored with restricted permissions on a private server; all communication with Google uses HTTPS; access is limited to the two scopes listed in section 3.</p>
+
+<h2>10. Google API Services User Data Policy</h2>
+<p>Admin Brain's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>11. Changes to this policy</h2>
+<p>Any change will be published on this page with an updated date.</p>
+
 <p><a href="/">← Home</a></p></body></html>
